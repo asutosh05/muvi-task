@@ -1,0 +1,13 @@
+{% if form.error %}
+{{ form.error }}
+{% endif %}
+<form method="POST">{% csrf_token %}
+    <!-- <input type="text" name="name" placeholder="Your Title"><br/>
+    <input type="text" name="location" placeholder=" location"><br/>
+    <input type="text" name="category" placeholder=" category"><br/> -->
+    
+    {{ form.as_p }}
+    <button type="submit">Save</button>
+    
+    
+</form>

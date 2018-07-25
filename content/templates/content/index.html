@@ -67,12 +67,31 @@
     
     <form>
             <div class="form-group">
-              <label for="exampleFormControlInput1">Email address</label>
-              <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="name@example.com">
+                <label for="recordedDate">Date and time</label>
+                <input class="form-control" type="datetime-local" id="recordedDate">               
             </div>
             <div class="form-group">
-              <label for="exampleFormControlSelect1">Example select</label>
-              <select class="form-control" id="exampleFormControlSelect1">
+                    <label >Email address</label>
+                    <input type="text" data-role="tagsinput" class="form-control" id="genre" placeholder="User Enter or Comma to add new">
+                    
+            </div>
+            <div class="form-group">
+                    <label >Description</label>
+                    <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+            </div>
+            <div class="form-group">
+                <label ></label>Category</label>
+                <select multiple class="form-control" id="category">
+                    <option>1</option>
+                    <option>2</option>
+                    <option>3</option>
+                    <option>4</option>
+                    <option>5</option>
+                </select>
+            </div>
+            <div class="form-group">
+              <label>Geographical Rights</label>
+              <select class="form-control" id="right">
                 <option>1</option>
                 <option>2</option>
                 <option>3</option>
@@ -80,16 +99,7 @@
                 <option>5</option>
               </select>
             </div>
-            <div class="form-group">
-              <label for="exampleFormControlSelect2">Example multiple select</label>
-              <select multiple class="form-control" id="exampleFormControlSelect2">
-                <option>1</option>
-                <option>2</option>
-                <option>3</option>
-                <option>4</option>
-                <option>5</option>
-              </select>
-            </div>
+            
             <div class="form-group">
               <label for="exampleFormControlTextarea1">Example textarea</label>
               <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
@@ -99,10 +109,6 @@
 
 
 <!--JAVASCRIPT-->
-
-<script type="text/javascript">
-        
-</script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.13.0/popper.min.js"></script>
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
