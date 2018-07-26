@@ -2,11 +2,18 @@
 
 {% block content %}
 <h1>My Muvi </h1>
+<div class="row">
+    <div class="col-lg-12 text-center">
+        <h3 class="mt-5">Your Muvi</h3>
+    </div>
+</div>
+<div class="table">
+    {% for obj in object_list %}
+        <div><a href="/muvi/{{obj.slug}}">{{obj.name}}</a></div>
+    {% endfor %}
+</div>
 {% for x in object_list %}
 
 {% endfor %}
-
-{% if empty %}
-{% endif %}
 
 {% endblock %}

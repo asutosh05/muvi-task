@@ -10,3 +10,8 @@ def home_view(requset):
 class ContentListView(ListView):
     def get_queryset(self):
         return Content.objects.all()
+
+class ContentDetailView(DetailView):
+    def get_queryset(self):
+        return Content.objects.all()
+        
