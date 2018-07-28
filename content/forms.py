@@ -22,6 +22,9 @@ class ContentCreateForm(forms.ModelForm):
             'releaseDate':_('Release/Recored Date'),
             'geoRights':_('Geographical Rights For')
         }
+        help_texts = {
+            'releaseDate': 'Please enter in MM/DD/YYYY',
+        }
          
     def clean_name(self):
         name=self.cleaned_data.get("name")
