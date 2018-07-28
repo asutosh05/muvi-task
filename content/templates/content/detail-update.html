@@ -8,5 +8,14 @@
     </div>
 </div>
 
+{% if form.error %}
+{{ form.error }}
+{% endif %}
+<form method="POST">{% csrf_token %}    
+    {{ form.as_p }}
+    <button type="submit">Save</button>
+    
+    
+</form>
 
 {% endblock %}

@@ -1,11 +1,36 @@
 from django import forms
+from .models import Content
+from django.utils.translation import gettext_lazy as _
+from django.forms import ModelForm, Textarea,DateInput,MultipleChoiceField
 
-class ContentCreateForm(forms.Form):
-    name=forms.CharField(required=True)
-    releaseDate= forms.DateTimeField(required=False)
-    genre= forms.CharField(required=False)
-    description=forms.CharField(required=False)
-    category= forms.CharField(required=False)
-    geoRights=forms.CharField(required=False)
-    price=forms.DecimalField(required=False)
-    currency=forms.CharField(required=False)
+class ContentCreateForm(forms.ModelForm):
+    class Meta:
+        
+        model=Content
+        fields = [
+            'name',
+            'releaseDate',
+            'genre',
+            'description',
+            'category',
+            'geoRights',
+            'price',
+            'currency'
+        ]
+        labels = {
+            'name': _('Muvi Name'),
+            'releaseDate':_('Release/Recored Date'),
+            'geoRights':_('Geographical Rights For')
+        }
+         
+    def clean_name(self):
+        name=self.cleaned_data.get("name")
+        if name == "hello":
+            raise forms.ValidationError("Not a valid error")
+        return name
+        
+
+
+
+
+    

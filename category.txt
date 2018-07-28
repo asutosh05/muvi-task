@@ -1,0 +1,24 @@
+# class ContentViewCreateForm(forms.Form):
+#     CATEGORY_CHOISE=((1	,'Film & Animation'),
+#     (2	,'Autos & Vehicles'),
+#     (3,	'Music'),
+#     (4,	'Pets & Animals'),
+#     (5,	'Sports'),
+#     (6,	'Travel & Events'),
+#     (7,	'Gaming'),
+#     (8,	'People & Blogs'),
+#     (9,	'Comedy'),
+#    (10,	'Entertainment'),
+#     (11,'News & Politics'),
+#     (12,'How-to & Style'),
+#     (13,'Education'),
+#     (14, 'Science & Technology'),
+#     (15,	'Non-profits & Activism'))
+#     name=forms.CharField(required=True,label='Muvi Name')
+#     releaseDate= forms.DateField(required=False)
+#     genre= forms.CharField(required=False)
+#     description=forms.CharField(required=False)
+#     category= forms.MultipleChoiceField(required=False,choices=CATEGORY_CHOISE)
+#     geoRights=forms.CharField(required=False)
+#     price=forms.DecimalField(required=False)
+#     currency=forms.CharField(required=False)

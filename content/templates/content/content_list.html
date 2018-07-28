@@ -7,10 +7,32 @@
         <h3 class="mt-5">Your Muvi</h3>
     </div>
 </div>
-<div class="table">
-    {% for obj in object_list %}
-        <div><a href="/muvi/{{obj.slug}}">{{obj.name}}</a></div>
-    {% endfor %}
+<div></div>
+<div class="container">
+   
+        <table class="table">
+            <thead>
+            <tr>
+                <td>Muvi Name / Edit </td>
+                <td>Date</td>
+                <td>Delete</td>
+            </tr>
+            </thead>
+            <tbody>
+                
+                {% for obj in object_list %}
+                <tr>
+                <td><a href="{% url "muvi-details" slug=obj.slug %}">{{obj.name}}</a></td>
+                <td>{{ obj.releaseDate }}</td>
+                <td><a href="{% url "delete" slug=obj.slug %}" >Delete</a></td>
+                </tr>
+                {% endfor %}
+            
+            </tbody>
+        </table>
+        
+        
+   
 </div>
 {% for x in object_list %}
 
