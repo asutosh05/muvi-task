@@ -29,7 +29,7 @@ class Content(models.Model):
     def title(self):
        return self.name
 
-   
+#Save slug before commit
 def rl_pre_save_receiver(sender,instance,*args,**kwargs):
     if not instance.slug:
         instance.slug=unique_slug_generator(instance)
