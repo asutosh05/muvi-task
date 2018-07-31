@@ -1,0 +1,6 @@
+[
+  "content/test/test_url.py::TestUrls::()::test_list_url",
+  "content/test/test_url.py::TestUrls::()::test_details_url",
+  "content/test/test_url.py::TestUrls::()::test_create_url",
+  "content/test/test_url.py::TestUrls::()::test_delete_url"
+]
