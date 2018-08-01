@@ -1,3 +1,4 @@
 {
-  "content/test/test_url.py::TestUrls::()::test_det": true
+  "content/test/test_url.py::TestUrls::()::test_det": true,
+  "content/test/test_views.py::TestViews::()::test_content_list_authenticated": true
 }
