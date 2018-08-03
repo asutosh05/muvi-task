@@ -40,7 +40,6 @@ class ContentUpdateView(LoginRequiredMixin,UpdateView):
     def get_context_data(self,*args,**kwargs):
         context=super(ContentUpdateView,self).get_context_data(*args,**kwargs)
         name=self.get_object().name
-        context['title']=f'Update Restaurants:{name}'
         return context
 #Delete View for content
 class ContentDeleteView(LoginRequiredMixin,DeleteView):

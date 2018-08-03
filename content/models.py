@@ -18,8 +18,8 @@ class Content(models.Model):
     description=models.TextField(null=True,blank=True)
     category= models.CharField(max_length=500,null=True,blank=True)
     geoRights=models.CharField(max_length=500,null=True,blank=True)
-    price=models.DecimalField(decimal_places=3,max_digits=1000,null=True,blank=True)
-    currency=models.CharField(max_length=500,null=True,blank=True)
+    price=models.DecimalField(decimal_places=3,max_digits=50,null=True,blank=True)
+    currency=models.CharField(max_length=100,null=True,blank=True)
     slug=models.SlugField(null=True,blank=True)
     
     def __str__(self):
